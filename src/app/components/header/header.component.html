@@ -1,0 +1,8 @@
+<nav class="bg-green-400 shadow-lg shadow-gray-100">
+  <ul class="flex justify-around">
+    <a class="w-full text-center py-4" *ngFor="let route of routes" [routerLink]="['/', route]"
+      routerLinkActive="active">
+      <li>{{ route }}</li>
+    </a>
+  </ul>
+</nav>
